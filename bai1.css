@@ -1,0 +1,26 @@
+.parent{
+    background-color: #FFFDE7;
+    border: 1px solid #9E9E9E;
+    text-align: center;
+}
+
+.header{
+    color:#D40000 ;
+    background-color:#FFD9E6 ;
+}
+
+.page1{
+    color: #0033CC ;
+}
+
+.page3{
+    color: #0033CC;
+}
+
+.page2{
+    color:#D40000 ;
+}
+
+hr{
+    width: 50%;
+}
