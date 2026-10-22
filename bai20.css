@@ -1,0 +1,77 @@
+body {
+    background-color: #12161a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #1c2226;
+    padding: 30px 50px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 320px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.subtext {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    background: linear-gradient(180deg, #ffd700, #c59b27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 550px;
+}
+
+.button-group button {
+    background-color: #232b30;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.button-group button:hover {
+    background-color: #323d44;
+}
+
+.button-group button.active {
+    background-color: #0d6efd;
+}
+
+.effect-gray { filter: grayscale(1); }
+.effect-xray { filter: grayscale(1) invert(1); }
+.effect-invert { filter: invert(1); }
+.effect-fliph { transform: scaleX(-1); }
+.effect-flipv { transform: scaleY(-1); }
+.effect-glow { filter: drop-shadow(0 0 8px #ffd700); }
+.effect-shadow { filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)); }
+.effect-boldshadow { filter: drop-shadow(8px 8px 3px #000000); }
+.effect-dropshadow { filter: drop-shadow(4px 4px 10px #0d6efd); }
+.effect-blur { filter: blur(3px); }
+.effect-wave { filter: url(#wave-filter); }
+.effect-mask { opacity: 0.4; }
+.effect-alpha { opacity: 0.4; }

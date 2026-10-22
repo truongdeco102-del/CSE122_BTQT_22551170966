@@ -1,0 +1,37 @@
+.head{
+    color:#C2185B;
+    text-align: center;
+}
+.parent{
+    display:flex;
+}
+
+.page1 p{
+    background-color: #FFC0CB;
+    display: inline-block;
+    
+}
+
+.page2 p{
+    background-color: #FFC0CB;
+    display: inline-block;
+    
+}
+
+.page1 ul{
+    list-style: square;
+}
+
+.page2 ul{
+    list-style: circle;
+}
+
+.footer{
+    text-decoration: underline;
+    text-align: right;
+    color:#0000EE;
+}
+
+.img img{
+    border-radius: 10px;
+}

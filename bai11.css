@@ -1,0 +1,40 @@
+* {box-sizing: border-box;}
+
+body{
+    background-color:#0f172a ;
+    color: #e2e8f0 ;
+    padding: 30px 20px;
+    margin: 0;
+}
+
+.header{
+    color: #e2e8f0;
+    text-align: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:18px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+figure{
+    background-color:  #1e293b ;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0;
+}
+
+figure img{
+    object-fit: cover ;
+    display: block;
+    width: 100%;
+    height: 220px;
+}
+
+figcaption{
+    color: #cbd5e1 ;
+    font-size: 13px;
+}

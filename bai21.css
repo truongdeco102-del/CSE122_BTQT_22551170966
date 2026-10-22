@@ -1,0 +1,144 @@
+
+body {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+.banner {
+    background-color: #C62828;
+    background-image: url('Anh/Bai21/Nen_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.banner .logo {
+    height: 30px;
+}
+
+.banner h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.main-body {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+.sidebar-menu {
+    width: 200px;
+    background-color: #8E0000;
+    flex-shrink: 0;
+    min-height: 400px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+}
+
+.sidebar-menu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu li a:hover {
+    background-color: #C62828;
+}
+
+
+.content {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.content h2 {
+    color: #C62828;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+.sub-menu {
+    background-color: #FFE082;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.sub-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sub-menu ul li::before {
+    content: "• ";
+}
+
+.sub-menu ul li:first-child::before {
+    content: "";
+}
+
+.content-box {
+    background-color: #FFFFFF;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+.ads {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.ads img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+    }
+
+    .sidebar-menu, 
+    .ads {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .sub-menu ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

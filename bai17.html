@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 17 - Đăng ký</title>
+    <link rel="stylesheet" href="bai17.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký tài khoản</h2>
+        <p>Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+
+        <form id="form">
+            <div class="group">
+                <label>Họ và tên</label>
+                <input type="text" id="fullname">
+                <small id="err-fullname"></small>
+            </div>
+
+            <div class="group">
+                <label>Email</label>
+                <input type="text" id="email">
+                <small id="err-email"></small>
+            </div>
+
+            <div class="group">
+                <label>Mật khẩu</label>
+                <input type="password" id="password">
+                <small id="err-password"></small>
+            </div>
+
+            <div class="group">
+                <label>Xác nhận mật khẩu</label>
+                <input type="password" id="confirm">
+                <small id="err-confirm"></small>
+            </div>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+
+    <script src="bai17.js"></script>
+</body>
+</html>

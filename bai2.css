@@ -1,0 +1,24 @@
+.parent{
+    background:linear-gradient(#C9A227, #A8861B );
+    border: 1px;
+}
+
+.header{
+    color:#FFFFFF ;
+    text-shadow: 5px;
+    text-align: center;
+}
+
+.page{
+    color:#FFFFFF ;
+    text-align: justify;
+}
+.body{
+    display: flex;
+    gap:20px;
+    padding:20px;
+}
+
+.imga{
+    border: 1px solid white;
+}

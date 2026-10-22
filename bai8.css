@@ -1,0 +1,43 @@
+.title{
+    color:#1668C1;
+    border-bottom: 1px solid  #1668C1;
+    font-size: 30px;
+}
+
+.main{
+    display: flex;
+}
+
+.menu{
+    color:#1668C1;
+    background-color:beige;
+    border-color: #1668C1;
+    gap:20px;
+    border-right: 1px solid yellow;
+    flex:3;
+    padding:30px;
+}
+
+.menu h4{
+    color:black ;
+}
+
+.content{
+    gap:20px;
+    padding:30px;
+}
+
+.category{
+    background-color: #1668C1;
+    color:white;
+    border-radius: 5px;
+}
+
+.article-text h3{
+    color:#1668C1;
+}
+
+.article{
+    display: flex;
+    border-bottom: 1px solid gray;
+}

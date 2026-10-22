@@ -1,0 +1,26 @@
+.head{
+    color:#1565C0;
+    text-align: center;
+}
+
+.img img{
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.page1 p::first-letter,
+.page3 p::first-letter{
+    font-size: 3.2em;
+    color:red;
+}
+
+.body{
+    gap:10px;
+}
+
+.page2{
+    background-color: #1565C0;
+    color:#FFFFFF;
+    text-align: right;
+}

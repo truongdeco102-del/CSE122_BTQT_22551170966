@@ -1,0 +1,50 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Khung lớn màu đen chứa toàn bộ đồng hồ */
+.clock-container {
+    background-color: #000000;
+    padding: 25px 30px;
+    border-radius: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Mỗi ô đen riêng biệt chứa 1 ảnh số / dấu hai chấm */
+.digit-box {
+    width: 52px;
+    height: 52px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Kích thước ảnh cao 52px đúng theo yêu cầu */
+.digit-box img {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+/* Lời chào chữ đỏ #c62828 trên nền trắng #FFFFFF */
+#greeting {
+    background-color: #FFFFFF;
+    color: #c62828;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}

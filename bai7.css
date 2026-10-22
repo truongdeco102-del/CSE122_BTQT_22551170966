@@ -1,0 +1,39 @@
+.header{
+    text-align: center;
+    background-color: #C8102E ;
+    color: #FFFFFF ;
+    font-size: 35px;
+}
+
+.subhead{
+    text-align: center;
+    color: #C8102E ;
+    background-color:#FBE3E8 ;
+    font-size: 20px;
+
+}
+
+.content{
+    display: flex;
+}
+
+.col-left{
+    flex:1;
+    padding-top: 500px;
+    border-right: 1px solid blue;
+}
+
+.col-right{
+    flex:1;
+    padding:20px;
+
+}
+
+.product-image{
+    float:right;
+}
+
+.color{
+    list-style: square;
+    color: #C8102E;
+}

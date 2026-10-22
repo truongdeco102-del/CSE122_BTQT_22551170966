@@ -1,0 +1,102 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Vỏ máy tính */
+.calculator {
+    background-color: #111827;
+    width: 340px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Màn hình */
+.screen {
+    background-color: #022c22;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#expression {
+    color: #4ade80;
+    font-size: 16px;
+    min-height: 20px;
+    word-break: break-all;
+}
+
+#result {
+    color: #4ade80;
+    font-size: 32px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+/* Bàn phím lưới 4 cột */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.keypad button {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.keypad button:active {
+    opacity: 0.8;
+}
+
+/* Nút số */
+.btn-number {
+    background-color: #25313f;
+    color: #e5e7eb;
+}
+
+/* Nút phép tính (+ - × ÷) */
+.btn-operator {
+    background-color: #0d6efd;
+    color: #FFFFFF;
+}
+
+/* Nút chức năng (%) */
+.btn-func {
+    background-color: #0d6efd;
+    color: #FFFFFF;
+}
+
+/* Nút C (Xóa) */
+.btn-action {
+    background-color: #dc2626;
+    color: #FFFFFF;
+}
+
+/* Nút = */
+.btn-equal {
+    background-color: #16a34a;
+    color: #FFFFFF;
+}
+
+/* Nút số 0 chiếm 2 cột */
+.btn-zero {
+    grid-column: span 2;
+    width: 100%;
+}

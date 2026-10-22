@@ -1,0 +1,131 @@
+:root {
+    --bg-color: #f4f4f4;
+    --container-bg: #ffffff;
+    --text-color: #333333;
+    
+    --chu: #1a73e8;       /* Màu tiêu đề thẻ */
+    --the: #f9f9f9;       /* Màu nền thẻ thông tin */
+    --vien: #dddddd;      /* Màu viền thẻ */
+    --nhan: #0d6efd;      /* Màu chữ nhấn */
+    
+    --switch-bg: #ccc;
+    --switch-circle: #fff;
+}
+
+body.toi {
+    --bg-color: #0b0f19;
+    --container-bg: #111827;
+    --text-color: #f3f4f6;
+    
+    --chu: #38bdf8;
+    --the: #1f2937;
+    --vien: #374151;
+    --nhan: #60a5fa;
+    
+    --switch-bg: #2563eb;
+    --switch-circle: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background-color: var(--container-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--vien);
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--switch-bg);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--switch-circle);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.card {
+    background-color: var(--the);
+    border: 1px solid var(--vien);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    color: var(--chu);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-text code {
+    background-color: rgba(128, 128, 128, 0.15);
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: var(--nhan);
+}
